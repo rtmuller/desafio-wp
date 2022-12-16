@@ -46,3 +46,8 @@ jobs:
       run: | 
         cd live
         terraform apply --var-file=terraform.auto.tfvars -var 'access_key=${{ secrets.AWS_ACCESS_KEY_ID }}' -var 'secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }}' -auto-approve
+    
+    - name: Terraform Output
+      run: | 
+        cd live
+        terraform output
