@@ -4,7 +4,7 @@ resource "aws_route53_zone" "zone_domain" {
 
 resource "aws_route53_record" "www" {
   zone_id = var.zone_id
-  name    = "wp.clusterpoc.com"
+  name    = "wp.mecontrata.cloud"
   type    = "A"
 
   alias {
@@ -15,7 +15,7 @@ resource "aws_route53_record" "www" {
 }
 
 resource "aws_acm_certificate" "certificate" {
-  domain_name       = "wp.clusterpoc.com"
+  domain_name       = "wp.mecontrata.cloud"
   validation_method = "DNS"
 
   tags = {
