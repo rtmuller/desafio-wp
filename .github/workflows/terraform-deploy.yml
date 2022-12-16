@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 
 env:
   AWS_REGION: 'us-east-2'
-  S3_BUCKET: "wp-tigre-22"
+  S3_BUCKET: "wordpress-apiki"
 
 jobs:
   terraform:
